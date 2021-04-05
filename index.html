@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flash15</title>
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #fd5957;
+        color: #fbffff;
+        font-family: "PT Sans", sans-serif;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        padding: 10px;
+      }
+
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        margin: 25px 0px;
+        text-align: center;
+        max-width: 750px;
+      }
+
+      #buttons {
+        display: flex;
+        align-items: center;
+      }
+
+      .download-button {
+        height: 50px;
+        margin: 0px 10px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 25px 0px;
+        width: 100%;
+        max-width: 750px;
+      }
+
+      input,
+      textarea,
+      button {
+        margin: 5px;
+        border: 1px solid #fbffff;
+        background: none;
+        border-radius: 5px;
+        color: #fbffff;
+        padding: 5px;
+        width: 75%;
+      }
+
+      button {
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flash15</h1>
+    <h2>
+      A new app that offers real time flash deals to customers in their specific
+      zip code.
+    </h2>
+
+    <h2>
+      Flash deal drops based upon your interest level and zip code. The only
+      caveat is you have 15 minutes to purchase the flash deal or it expires.
+    </h2>
+
+    <h2>
+      Flash15 is quite simple; Sit back, don’t do anything and wait for deals to
+      drop on your phone. You will then have 15 minutes from the time the deal
+      dropped to click on the deal and purchase the offering or do nothing.
+    </h2>
+
+    <div id="buttons">
+      <a href="https://apps.apple.com/us/app/flash15/id1557623626"
+        ><img class="download-button" src="appstore.png"
+      /></a>
+
+      <a href="#"><img class="download-button" src="playstore.png" /></a>
+    </div>
+
+    <form action="https://submit-form.com/4YffGpGV">
+      <input type="text" id="name" name="name" placeholder="Name" required="" />
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        required=""
+      />
+
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Message"
+        required=""
+      ></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
